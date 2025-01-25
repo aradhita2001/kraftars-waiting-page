@@ -13,7 +13,7 @@ let x = setInterval(function() {
  // If the count down is finished, write some text
  if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("timebox").innerHTML = "EXPIRED";
   }
 
   // Time calculations for days, hours, minutes and seconds
@@ -22,7 +22,7 @@ let x = setInterval(function() {
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
+  // Display the result in the element with id="timebox"
   document.getElementById("day").innerHTML = days;
   document.getElementById("hour").innerHTML = hours;
   document.getElementById("minute").innerHTML = minutes;
